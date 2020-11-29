@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <title>Enter your information</title>
+        <link rel='stylesheet' href='style.css'/>
+    </head>
+    <body id='body'>
+        <header class='main-header'>
+            <nav class='main-nav'>
+                <div class='main-nav-logo'>
+                    <a href='index.html'>
+                        <img src='assets/Logo_Ausgov.svg'/>
+                        <!-- Image source: https://www.australia.gov.au/ -->
+                    </a>
+                </div>
+                <div class='main-nav-mobile-menu'>
+                    <button id='main-nav-menu-btn' type='button'>
+                        <span class='hamburger-menu-icon'>&#9776;</span>
+                        Menu
+                    </button>
+                </div>
+                <div class='main-nav-links'>
+                    <a class='main-nav-link' href='#'>Health</a>
+                    <a class='main-nav-link' href='#'>Business</a>
+                    <a class='main-nav-link' href='#'>Financial<br/>Support</a>
+                    <a class='main-nav-link' href='#'>Education</a>
+                    <a class='main-nav-link' href='#'>Support for<br/>Communities</a>
+                    <a class='main-nav-link' href='#'>Travel and<br/>Consumers</a>
+                    <a class='main-nav-link' href='#'>Search</a>
+                </div>
+            </nav>
+            <div id='main-nav-dropdown-menu'>
+                <nav class='dropdown-menu-nav'>
+                    <div class='main-nav-logo'>
+                        <a href='#'>
+                            <img src='assets/Logo_Ausgov.svg'/>
+                            <!-- Image source: https://www.australia.gov.au/ -->
+                        </a>
+                    </div>
+                    <div class='main-nav-mobile-menu'>
+                        <button id='dropdown-menu-btn' type='button'>
+                            <span class='hamburger-menu-icon'>&#xd7;</span>
+                            Menu
+                        </button>
+                    </div>
+                </nav>
+                <a class='dropdown-menu-nav-link' href='#'>Health<span class='dropdown-menu-link-arrow'>&#x3e;</span></a>
+                <a class='dropdown-menu-nav-link' href='#'>Business<span class='dropdown-menu-link-arrow'>&#x3e;</span></a>
+                <a class='dropdown-menu-nav-link' href='#'>Financial Support<span class='dropdown-menu-link-arrow'>&#x3e;</span></a>
+                <a class='dropdown-menu-nav-link' href='#'>Education<span class='dropdown-menu-link-arrow'>&#x3e;</span></a>
+                <a class='dropdown-menu-nav-link' href='#'>Support for communities<span class='dropdown-menu-link-arrow'>&#x3e;</span></a>
+                <a class='dropdown-menu-nav-link' href='#'>Travel and consumers<span class='dropdown-menu-link-arrow'>&#x3e;</span></a>
+                <a class='dropdown-menu-nav-link' href='#'>Search<span class='dropdown-menu-link-arrow'>&#x3e;</span></a>
+            </div>
+        </header>
+        <section>
+            <div class='user-input-container'>
+              
+              <button onclick="topFunction()" id="backToTop" title="Go to top"></button>
+
+              <div class='breacrumbs-container'><a class="breadcrumbs" href="index.html">Home</a>
+                   <img class='breadcrumbs-arrow' src='assets/greater-than.png'/>
+                   <a class="breadcrumbs" href="misinformation_package.html">Introduction to misinformation for responsible adults</a>
+                   <img class='breadcrumbs-arrow' src='assets/greater-than.png'/>
+                   <a class="breadcrumbs" href="user_input.html">Enter your dependant/s age</a>
+              </div>
+
+                <h1 class='user-input-title'>Please enter the age of your dependant&#47;s</h1>
+                <p>Use the buttons to select the number of dependants you care for and their age group.</p>
+                <div id='dependants-container' class='dependants-container'>
+                    <div id='dependant' class='dependant'>
+                        <div class='dependant-number'>Dependant No.1</div>
+                        <div>
+                            <select class='dependant-menu select'>
+                                <option selected disabled hidden>Select age</option>
+                                <option value='1'>Infant (0 - 1)</option>
+                                <option value='2'>Toddler (1 - 3)</option>
+                                <option value='3'>Preschooler (3 - 5)</option>
+                                <option value='4'>Middle Childhood (6 - 11)</option>
+                                <option value='5'>Young Teen (12 - 14)</option>
+                                <option value='6'>Teenager (15 - 17)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id='add-dependant-btn'>+ Add another dependant</button>
+                    <button id='remove-dependant-btn'>- Remove a dependant</button>
+                </div>
+                <button id='user-input-confirm-btn'>Confirm</button>
+                <p id='uncompleted-warning'>The age for one of your dependants haven't been filled in. Please select an age group and try again.</p>
+            </div>
+            <div class='extra-padding'></div>
+        </section>
+        <footer class='main-footer'>
+            <nav class='main-footer-nav'>
+                <div class='main-footer-site-description'>
+                    <h3 class='australia-gov-au'>Australia.gov.au</h3>
+                    <p class='coronavirus-response-site'>Coronavirus response site</p>
+                    <p class='coronavirus-response-site' >Prototype created by Lisa Doan and Lauren Cislowski</p>
+                    <a class="link-web" href='references.html'><p class='coronavirus-response-site'>Access references used</p></a>
+                </div>
+                <div class='main-footer-nav-links'>
+                    <a class='main-footer-nav-links' href='#'>Australia.gov.au</a>
+                    <a class='main-footer-nav-links' href='#'>About</a>
+                    <a class='main-footer-nav-links' href='#'>Privacy</a>
+                    <a class='main-footer-nav-links' href='#'>Accessibility</a>
+                    <a class='main-footer-nav-links' href='#'>Copyright</a>
+                    <a class='main-footer-nav-links' href='#'>Social media</a>
+                </div>
+                <address>
+                    <p class='main-footer-nav-contact'>Coronavirus Health Information Line <a class='phone-number-style' href='#'>1800 020 080</a></p>
+                    <p class='main-footer-nav-contact'>Business Help Hotline <a class='phone-number-style' href='#'>13 28 46</a></p>
+                    <p class='main-footer-nav-contact'>Consular Assistance Call <a class='phone-number-style' href='#'>+61 2 6261 3305 (overseas)</a> / <a class='phone-number-style' href='#'>1300 555 135 (within Australia)</a></p>
+                </address>
+                <div>
+                    <h3 class='follow-us'>Follow us</h3>
+                    <div class='social-links-container'>
+                        <div class='social-link-row'>
+                            <div class='social-link'>
+                                <a href='#'>
+                                    <img alt="Whatsapp logo" src='assets/social-whatsapp-white.svg'/>
+                                </a>
+                            </div>
+                            <div class='social-link'>
+                                <a href='#'>
+                                    <img alt="Linkedinlogo" src='assets/social-linkedin-white.svg'/>
+                                </a>
+                            </div>
+                            <div class='social-link'>
+                                <a href='#'>
+                                    <img alt="Twitter logo" src='assets/social-twitter-white.svg'/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='social-link-row'>
+                            <div class='social-link'>
+                                <a href='#'>
+                                    <img alt="Facebook logo" src='assets/social-facebook-white.svg'/>
+                                </a>
+                            </div>
+                            <div class='social-link'>
+                                <a href='#'>
+                                    <img alt="Youtube logo" src='assets/social-youtube-white.svg'/>
+                                </a>
+                            </div>
+                            <div class='social-link'>
+                                <a href='#'>
+                                    <img alt="Instagram logo" src='assets/social-instagram-white.svg'/>
+                                </a>
+                            </div>
+                            <!-- Images above source: https://www.australia.gov.au/ -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+
+        <script src='script.js'></script>
+        <script src='user_input.js'></script>
+    </body>
+</html>
